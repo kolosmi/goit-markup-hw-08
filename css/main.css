@@ -843,10 +843,17 @@
 }*/
 .features {
   padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 60px;
 }
-.features__item + .features__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 .features__list {
   display: flex;
@@ -859,17 +866,39 @@
 .features__title {
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--titles-color);
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
+.features__item {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+  }
 }
 
 .features__item::before {
   display: block;
   content: "";
   height: 120px;
-  background-color: red;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -892,9 +921,16 @@
   background-image: url(../images/astronaut\ .png);
 }
 
-/*.features__list {
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
     display: flex;
-}*/
+    flex-wrap: wrap;
+  }
+}
 /*.features__list .features__item +.features__item {
     margin-left: 30px;
 }*/
@@ -917,6 +953,20 @@
 .product {
   margin-top: 0;
   padding: bottom 94px;
+  display: none;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .product {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    display: block;
+  }
 }
 .product__title {
   margin-bottom: 50px;
@@ -929,6 +979,7 @@
 }
 .product__image {
   position: relative;
+  max-width: 100%;
 }
 .product__text {
   bottom: 0;
@@ -1019,10 +1070,34 @@
     margin-top: 0;
 }*/
 .staff {
-  padding: 94px 0;
-  margin-top: 94px;
-  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .staff {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.staff-person__photo {
+  max-width: 100%;
+}
+
+.staff-list {
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .staff-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .staff-list {
+    padding-bottom: 94px;
+  }
 }
 
 .staff-person {
@@ -1031,6 +1106,20 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .staff-person {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .staff-person {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+  }
 }
 .staff-person__position {
   text-align: center;
@@ -1057,20 +1146,26 @@
 }
 
 .staff-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17px;
   text-align: center;
-  color: var(--hero-footer-color);
+  letter-spacing: 0.03em;
+  color: #212121;
 }
-
-.staff-list {
-  display: flex;
-}
-
-.staff-list .staff-person + .staff-person {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .staff-title {
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .socials {
@@ -1506,7 +1601,8 @@
 }
 
 img {
-  display: block;
+  display: flex;
+  width: 100%;
 }
 
 p,
@@ -1539,10 +1635,25 @@ body {
 
 }*/
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {

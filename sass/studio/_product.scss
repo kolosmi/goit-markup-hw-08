@@ -1,6 +1,19 @@
 .product {
     margin-top: 0;
     padding: bottom 94px;
+display: none;
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+            }
+
+                        @media screen and (min-width: 1200px) {
+                            margin-top: 94px;
+                            margin-bottom: 94px;
+            display: block;
+                        }
+
 
     &__title {
             margin-bottom: 50px;
@@ -16,6 +29,15 @@
 
         &__image {
             position: relative;
+            max-width: 100%;
+
+            @media screen and (min-width: 1200px) {
+                   
+                    
+            
+                }
+            
+                               
         }
 
         &__text {
@@ -38,7 +60,14 @@
             color: var(--header-color);
         
             display: flex;
-        }
+
+            @media screen and (min-width: 1200px) {
+                  
+            
+                }
+            
+                
+            }
 
         &__list {
             display: flex;
