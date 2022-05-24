@@ -1,34 +1,69 @@
 .clients {
-    padding: 94px 0;
-
+    
+padding-top: 60px;
+    margin-bottom: 60px;   
+           
+   
     &__title {
-            font-family: "Roboto";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.16;
+        font-weight: 700;
+            font-size: 28px;
+            line-height: 1.17;
+            
+        
             text-align: center;
             letter-spacing: 0.03em;
-    
-            color: #212121;
-    
+        
+            color: #212121;          
+                  
             margin-bottom: 50px;
         }
 
         &__list {
             display: flex;
+          
             align-items: center;
             margin-left: 0;
+            
+            width: 100%;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: 768px){
+                max-width: 738px;
+                
+            }
+            @media screen and (min-width: 1200px){
+                flex-wrap: nowrap;
+            
+            }
         }
 
         &__logo {
+            margin-bottom: 30px;
+            max-width: 100%;
             margin-left: 30px;
-            &:first-child {
-                    margin-left: 0px;
-                }
-        }
+            
+
+                                      
+                                 @media screen and (min-width: 768px) {
+                                     margin-left: 30px;
+                                    margin-bottom: 30px;
+                                               }
+                                    &:nth-child(3n + 1){
+                                        margin-left: 0;
+                                    }
+                                 }
+                                                                  @media screen and (min-width: 1200px) {
+                                                                    margin-bottom: 30px;
+                                                                         margin-left: 30px;                                                            
+                                                                        &:first-child{
+                                                                            margin-left: 0;
+                                                                        }                                                                   
+                                                                        
+                                                                  }
+                                                                
 
         &__link {
+
             display: flex;
             padding: 16px 32px;
             fill: currentColor;
@@ -37,10 +72,10 @@
             border-radius: 4px;
             align-items: center;
             justify-content: center;
-            width: 170px;
+            width: 210px;
             height: 92px;
             cursor: pointer;
-        
+       
             transition-property: border-color, color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,13 +87,16 @@
                     transition-duration: 250ms;
                     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 }
+                                 @media screen and (min-width: 1200px) {
+                                     width: 170px;
+                                 }
         }
 
         &__icon {
             display: flex;
             fill: currentColor;
         }
-}
+    }
 
 /*.clients__title {
     font-family: "Roboto";
