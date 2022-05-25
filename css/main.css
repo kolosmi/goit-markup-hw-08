@@ -192,11 +192,16 @@
 }*/
 .footer {
   display: block;
-  width: 480px;
+  width: 100%;
   height: 603px;
   background-color: var(--hero-footer-color);
   max-width: 100%;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
 }
 .footer .logo {
   display: block;
@@ -204,9 +209,21 @@
   padding-top: 60px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer .logo {
+    display: flex;
+    padding: 0;
+  }
+}
 .footer .footer__text {
   display: block;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer .footer__text {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer__list {
   display: block;
@@ -938,6 +955,7 @@
 }
 .features__list {
   display: flex;
+  flex-wrap: wrap;
 }
 .features__text {
   font-weight: 400;
@@ -1002,16 +1020,6 @@
   background-image: url(../images/astronaut\ .png);
 }
 
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 768px) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 /*.features__list .features__item +.features__item {
     margin-left: 30px;
 }*/
@@ -1344,8 +1352,11 @@
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
   align-items: center;
-  margin-left: 0;
+  margin-left: -30px;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -1361,7 +1372,7 @@
 }
 .clients__logo {
   margin-bottom: 30px;
-  max-width: 100%;
+  width: 100%;
   margin-left: 30px;
   width: calc(50% - 30px);
 }
@@ -1459,11 +1470,6 @@
     border-color: var(--button-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client__icon {
-    display: flex;
-    fill: currentColor;
 }*/
 .main {
   padding-top: 94px;

@@ -17,7 +17,8 @@
    
 
     &__list {
-            display: flex;           
+            display: flex;
+            flex-wrap: wrap;
         }
 
     &__text {
@@ -98,20 +99,19 @@
 }
 
 
-.features__list {
-    display: flex;
-flex-wrap: wrap;
 
- @media screen and (min-width: 768px) {
-     display: flex;
-     flex-wrap: wrap;
+   
 
- }
-   @media screen and (min-width: 1200px) {
+//  @media screen and (min-width: 768px) {
+//      display: flex;
+//      flex-wrap: wrap;
+
+//  }
+//    @media screen and (min-width: 1200px) {
 
        
-   }
-}
+//    }
+
 
 
 /*.features__list .features__item +.features__item {
