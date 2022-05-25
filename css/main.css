@@ -206,6 +206,12 @@
     height: 463px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    padding: 60px 0;
+  }
+}
 .footer__list {
   display: block;
   justify-content: center;

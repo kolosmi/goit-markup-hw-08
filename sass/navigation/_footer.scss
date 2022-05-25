@@ -13,6 +13,10 @@ text-align: center;
 align-items: baseline;
 height: 463px;
     }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+                padding: 60px 0;
+        }
 
         &__list {
 display: block;
@@ -34,6 +38,7 @@ text-align: center;
                                      margin-top: 20px;
                                      padding-bottom: 0;
                                  }
+                                                                 
             }
                                 
                
@@ -71,6 +76,7 @@ text-align: center;
         margin-top: 60px;
         margin-left: 115px;
     }
+          
 }
 
 .footer__text {
@@ -237,6 +243,5 @@ margin-top: 20px;
 
 
 .news__icon {
-    margin-left: 10px;
+    margin-left: 10px;}
     
-}
