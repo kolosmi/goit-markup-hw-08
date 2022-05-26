@@ -196,12 +196,12 @@
   height: 603px;
   background-color: var(--hero-footer-color);
   max-width: 100%;
-  flex-direction: column;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
     height: 463px;
   }
@@ -1399,6 +1399,12 @@
 .clients__icon {
   display: flex;
   fill: currentColor;
+}
+
+.clients__list .container {
+  display: flex;
+  max-width: 100%;
+  padding: 0;
 }
 
 /*.clients__title {

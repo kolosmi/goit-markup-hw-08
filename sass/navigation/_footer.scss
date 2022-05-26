@@ -6,15 +6,17 @@ width: 100%;
 height: 603px;
     background-color: var(--hero-footer-color);
 max-width: 100%;
-flex-direction: column;
+
 text-align: center;
 @media screen and (min-width: 768px) {
         display: flex;
+        flex-direction: row;
 align-items: baseline;
 height: 463px;
     }
         @media screen and (min-width: 1200px) {
             display: flex;
+           
                 padding: 60px 0;
                 &__box {
                         display: flex;
