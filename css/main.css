@@ -502,7 +502,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 360px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -519,16 +519,30 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     max-width: 696px;
   }
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.png);
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .hero__button {
@@ -1332,12 +1346,8 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  display: flex;
-  width: 100%;
-  align-items: center;
   margin-left: -30px;
-  width: 100%;
-  flex-wrap: wrap;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .clients__list {
@@ -1351,19 +1361,19 @@
 }
 .clients__logo {
   margin-bottom: 30px;
-  width: 100%;
   margin-left: 30px;
-  width: calc(50% - 30px);
+  width: calc(100% - 30px);
+  width: 210px;
 }
 @media screen and (min-width: 768px) {
   .clients__logo {
     width: calc(33.3333333333% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients {
+  .clients__logo {
+    width: calc(33.3333333333% - 30px);
     margin-bottom: 30px;
     margin-left: 30px;
   }
@@ -1405,6 +1415,8 @@
   display: flex;
   max-width: 100%;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*.clients__title {

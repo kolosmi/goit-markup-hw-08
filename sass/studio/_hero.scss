@@ -1,106 +1,119 @@
 .hero {
-    text-align: center;
-    background: var(--hero-footer-color);
-max-width: 100%;
-    margin-bottom: 0;
-   padding-top: 118px;
-   
-    height: 400px;
-    margin: 0 auto;
+  text-align: center;
+  background: var(--hero-footer-color);
+  max-width: 100%;
+  margin-bottom: 0;
+  padding-top: 118px;
 
-    @media screen and (min-width: 768px) {
-            display: flex;
-           
-    
-        }
-    
-        @media screen and (min-width: 1200px) {
+  height: 400px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 1600px;
     height: 600px;
-            padding-bottom: 200px;
-            padding-top: 200px;
-        }
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 
-    &__title {
-        font-weight: 900;
-            font-size: 26px;
-            line-height: 1.6;                   
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-        max-width: 360px;
-            color: #FFFFFF;
-    
-            margin: 0 auto;
-            margin-bottom: 30px;
-           
-            @media screen and (min-width: 768px) {
-                    display: flex;
-            
-            
-                }
-            
-                @media screen and (min-width: 1200px) {
-            font-weight: 900;
-                font-size: 44px;
-                line-height: 1.36;
-               
-                text-align: center;
-                letter-spacing: 0.06em;
-                text-transform: uppercase;
-            
-                color: #FFFFFF;
-                   
-                    max-width: 696px;
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 360px;
+    color: #ffffff;
 
-                    
-                }
-        }
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      max-width: 696px;
+    }
+  }
 }
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-image.png);
+  flex-grow: 1;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-mobile.jpg);
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
 }
 
-
-
 .hero__button {
-    border: none;
-    border-radius: 4px;
-    padding: 10px 32px;
-    margin-top: 0;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 0;
 
-    min-width: 200px;
-    min-height: 50px;
-    display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
+  display: inline-block;
 
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    background-color: var(--button-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--button-color);
 
+  color: var(--header-color);
+
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
     color: var(--header-color);
-
-    cursor: pointer;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-            color: var(--header-color);
-            background: #188ce8;
-        }
-
-                 }
+    background: #188ce8;
+  }
+}
 
 /*.hero__button:hover {
     color: var(--header-color);
