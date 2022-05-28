@@ -1,106 +1,88 @@
-
-
 .features {
+  padding-top: 94px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    margin-bottom: 60px;
+  }
 
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-@media screen and (min-width: 768px) {
-        padding-top: 60px;
+  &__text {
+    font-weight: 400;
+    line-height: 1.71;
 
+    color: var(--text-color);
+  }
 
+  &__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--titles-color);
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
     }
-    @media screen and (min-width: 1200px) {
-            padding-top: 94px;
-           
-        }      
-   
-
-    &__list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-    &__text {
-            font-weight: 400;
-            line-height: 1.71;
-    
-            color: var(--text-color);
-        }
-
-        &__title {
-            font-size: 14px;
-            margin-bottom: 10px;
-        text-align: center;
-            font-weight: 700;
-            line-height: 1.14;
-            text-transform: uppercase;
-        
-            color: var(--titles-color);
-
-            @media screen and (min-width: 768px) {
-                    text-align: left;
-            
-                }
-        }
-
-        
+  }
 }
 
 .features__item {
-    max-width: 100%;
-    margin-bottom: 30px;
-      
-    
-        @media screen and (min-width: 768px) {
-            width: calc(100% / 2 - 30px);
-            margin-left: 30px;
+  max-width: 100%;
+  margin-bottom: 30px;
 
-            // &:nth-child(2n + 1) {
-            //         margin-left: 0;
-            //     }
-        }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
 
-                 @media screen and (min-width: 1200px) {
-                    width: calc(100% / 4 - 30px);
-                        margin-left: 30px;
-        
-                 }
+    // &:nth-child(2n + 1) {
+    //         margin-left: 0;
+    //     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
 
-
-
 .features__item::before {
-    display: block;
-    content: "";
-    height: 120px;
-   
-    margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f4fa;
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 
 .features__icon-antena::before {
-    background-image: url(../images/antenna\ .png);
+  background-image: url(../images/antenna\ .png);
 }
 
 .features__icon-watch::before {
-    background-image: url(../images/watch.png);
+  background-image: url(../images/watch.png);
 }
 
 .features__icon-comp::before {
-    background-image: url(../images/comp.png);
+  background-image: url(../images/comp.png);
 }
 
 .features__icon-astronaut::before {
-    background-image: url(../images/astronaut\ .png);
+  background-image: url(../images/astronaut\ .png);
 }
-
-
-
-   
 
 //  @media screen and (min-width: 768px) {
 //      display: flex;
@@ -109,10 +91,7 @@
 //  }
 //    @media screen and (min-width: 1200px) {
 
-       
 //    }
-
-
 
 /*.features__list .features__item +.features__item {
     margin-left: 30px;
