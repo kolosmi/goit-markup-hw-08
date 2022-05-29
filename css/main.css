@@ -3,6 +3,21 @@
   height: 60px;
 }
 
+.menu-container {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100% vw;
+  height: 100% vh;
+  z-index: 999;
+  transform: translateX(100%);
+}
+
+.menu-container .is-open {
+  transform: translateX(0%);
+}
+
 .menu-button {
   display: inline-flex;
   border: none;
@@ -33,49 +48,14 @@
   padding-top: 10px;
 }
 
-.header-list {
-  display: flex;
-  margin-left: 93px;
-}
-.header-list__item + .header-list__item {
-  margin-left: 50px;
-}
-.header-list__page {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.mobile-menu__page {
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--titles-color);
-}
-.header-list__page--current {
-  position: relative;
-  color: var(--button-color);
-}
-.header-list__page--current::after {
-  position: absolute;
-  content: "";
-  display: block;
-  background-color: #2196f3;
-  width: 100%;
-  height: 4px;
-  border-radius: 2%;
-  left: 0;
-  bottom: 0;
-}
-.header-list__item {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--titles-color);
-}
-.header-list__item :hover, .header-list__item :focus {
-  color: var(--button-color);
-  background-color: var(--header-color);
+  color: #212121;
+  text-align: center;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 .logo {
@@ -94,12 +74,11 @@
 }
 
 .contacts {
-  display: flex;
+  display: block;
   margin-left: auto;
   align-items: center;
 }
 .contacts__item {
-  display: block;
   align-items: center;
   transition-property: color;
   transition-duration: 250ms;
@@ -115,11 +94,13 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+  display: none;
 }
 .contacts__mail, .contacts__phone {
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+  color: #2196f3;
   display: flex;
   padding: 32px 0;
   align-items: center;
