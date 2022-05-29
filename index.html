@@ -25,10 +25,8 @@
       <div class="container main-nav">
         <a class="logo" href="">Web<span class="logo__color">Studio</span></a>
         <button
-          type="button"
-          class="menu-button is-open"
-          class="js-open-menu"
-          aria-expended="false"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
           aria-controls="mobile-menu"
         >
           <svg
@@ -36,30 +34,46 @@
             height="16px"
             aria-label="переключатель мобильного меню"
           >
-            <!-- <use
-              class="close"
-              href="./images/symbol33-defs.svg#icon-close"
-            ></use> -->
             <use
               class="menu-header"
               href="./images/symbol33-defs.svg#icon-menu-header"
             ></use>
           </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu">
-            <svg
-              width="24px"
-              height="16px"
-              aria-label="переключатель мобильного меню"
+        <!-- 
+        <ul class="header-list">
+          <li class="header-list__item">
+            <a
+              href="./index.html"
+              class="header-list__page header-list__page--current"
+              >Студия</a
             >
-              <use
-                class="close"
-                href="./images/symbol33-defs.svg#icon-close"
-              ></use>
-            </svg>
-          </button>
-        </div>
+          </li>
+          <li class="header-list__item">
+            <a href="./portfolio.html" class="header-list__page">Портфолио</a>
+          </li>
+          <li class="header-list__item">
+            <a href="" class="header-list__page">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__mail"
+              ><svg class="contacts__icon" width="16" height="12">
+                <use href="./images/symbolnew-defs.svg#icon-envel"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__phone"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/symbolnew-defs.svg#icon-tel"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul> -->
       </div>
     </header>
 
@@ -403,20 +417,16 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <!-- <svg
+        <svg
           width="24px"
           height="16px"
           aria-label="переключатель мобильного меню"
         >
           <use class="close" href="./images/symbol33-defs.svg#icon-close"></use>
-          <use
-            class="menu-header"
-            href="./images/symbol33-defs.svg#icon-menu-header"
-          ></use>
-        </svg> -->
+        </svg>
       </button>
 
-      <!-- <ul class="mobile-menu">
+      <ul class="mobile-menu">
         <li class="mobile-menu__item">
           <a
             href="./index.html"
@@ -430,7 +440,24 @@
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__page">Контакты</a>
         </li>
-      </ul> -->
+      </ul>
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="contacts__phone"
+            ><svg class="contacts__icon" width="10" height="16">
+              <use href="./images/symbolnew-defs.svg#icon-tel"></use></svg
+            >+38 096 111 11 11</a
+          >
+        </li>
+
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="contacts__mail"
+            ><svg class="contacts__icon" width="16" height="12">
+              <use href="./images/symbolnew-defs.svg#icon-envel"></use></svg
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
     </div>
     <footer class="footer">
       <div class="container footer__box">
