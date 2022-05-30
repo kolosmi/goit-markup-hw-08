@@ -1,52 +1,54 @@
 .main {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-bottom: 94px;
+  width: 480px;
 }
 
 .nav-list {
-    justify-content: center;
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    &__btn {
-            margin-left: 8px;
-            &:first-child {
-                    margin-left: 0px;
-                }
-        }
+  &__btn {
+    margin-left: 8px;
+    margin-bottom: 15px;
+    &:nth-child(3n + 1) {
+      margin-left: 0px;
+    }
+  }
 
-        &__btn-text {
-            padding: 6px 22px;
-        
-            text-align: center;
-            max-width: 145px;
-            display: block;
-            border-radius: 4px;
-            border: 1px solid transparent;
-            font-family: inherit;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.62;
-            letter-spacing: 0.03em;
-        
-            background-color: var(--btn-bcg-color);
-            color: var(--titles-color);
-            cursor: pointer;
-        
-            transition-property: background-color color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__btn-text {
+    padding: 6px 22px;
 
-            &:hover,
-            &:focus {
-                    color: var(--header-color);
-                    background-color: var(--button-color);
-            
-                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-                        0px 2px 2px rgba(0, 0, 0, 0.12);
-                    border-radius: 4px;
-                }
-        }
+    text-align: center;
+    max-width: 145px;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    background-color: var(--btn-bcg-color);
+    color: var(--titles-color);
+    cursor: pointer;
+
+    transition-property: background-color color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--header-color);
+      background-color: var(--button-color);
+
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+    }
+  }
 }
 
 /*.nav-list .nav-list__btn + .nav-list__btn{

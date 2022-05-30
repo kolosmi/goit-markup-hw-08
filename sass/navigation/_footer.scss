@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    height: 463px;
+    min-height: 463px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
